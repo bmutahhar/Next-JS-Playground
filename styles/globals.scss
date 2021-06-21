@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+@import "./variables";
+@mixin horizontalLine($position) {
+  #{$position}: 2px solid #ddd;
+}
+body {
+  background: $background-color;
+  color: $text-color;
+  font-family: "Nunito";
+  overflow-x: hidden;
+}
+a {
+  color: $text-color;
+  text-decoration: none;
+}
+.content {
+  max-width: $max-width;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+nav {
+  margin: 10px auto 80px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  @include horizontalLine(border-bottom);
+
+  a {
+    margin-left: 12px;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+}
+footer {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+  color: $text-color;
+  @include horizontalLine(border-top);
+}
+
+.not-found {
+  text-align: center;
+  a {
+    color: $btn-color;
+    text-decoration: underline;
+  }
+}
