@@ -16,7 +16,7 @@ export default function Home() {
         accusamus voluptas.
       </p>
       <Link href="/list">
-        <a className={styles.btn}>My List</a>
+        <a className={styles.btn}>User List</a>
       </Link>
     </div>
   );
